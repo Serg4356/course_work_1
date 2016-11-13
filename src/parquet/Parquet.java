@@ -1,6 +1,7 @@
+package parquet;
 
 public class Parquet{
-
+    public static long [][] arr;
     // метод для сопоставления сечений
     public static boolean acceptCut(int firstCut, int secondCut, int digitsCount){
         int countSecond = 0;// переменная для хранения кол-ва 0 во втором сечении
@@ -25,7 +26,7 @@ public class Parquet{
     public static void countValues(int digitsCount, int roomWidth){
     long resNumber = 0;
     int maxi = 1<<digitsCount;
-    long [][] arr = new long[maxi][roomWidth+1];
+    arr = new long[maxi][roomWidth+1];
 
     arr[0][0] = 1;
 
